@@ -5,8 +5,11 @@ public class accessModifierJavaClass {
 	protected int protectedInt = 45;
 	 int defaultInt = 44;
 	private int privateInt = 45;
+	
 	public static void main(String[] args) {
+		
 		accessModifierJavaClass obj = new accessModifierJavaClass();
+		
 		System.out.println(obj.publicInt);
 		System.out.println(obj.protectedInt);
 		System.out.println(obj.privateInt);
@@ -22,20 +25,22 @@ public class accessModifierJavaClass {
 	
 	protected void sample()
 	{
-		System.out.println("hello");
+		System.out.println("Protected Method");
 	}
 	 double SavingInterestRate() {
 		// TODO Auto-generated method stub
+		 System.out.println("Default method");
 		return 4;
 	}
 
 	public void simplePersonalLoadnInterestRate() {
 		// TODO Auto-generated method stub
-		
+		System.out.println("public method");
 	}
 
 	private double HomeLoadinterestRate() {
 		// TODO Auto-generated method stub
+		System.out.println("private method");
 		return 8;
 	}
 

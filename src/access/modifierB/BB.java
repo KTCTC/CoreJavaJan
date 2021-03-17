@@ -1,6 +1,6 @@
 package access.modifierB;
 
-
+import access.modifierA.accessModifierJavaClass;
 
 public class BB extends accessModifierJavaClass{
 	public static void main(String[] args) {

@@ -1,43 +1,57 @@
 package enumdata.in.java;
 
 public class EnumData {
-   public enum yearsOfEngg {firstYear,secondYear,thirdYear,forurthYear, fifthYear}; 
-   public enum employeeName {Sandip,dhanaji};
-   
-   static int abcd = 45;
-   
-   public static void main(String[] args) {
-	   EnumData obj = new EnumData();
-	   
-	   yearsOfEngg a = yearsOfEngg.firstYear;
-	   obj.numberOfStudent(a);
-	   for (yearsOfEngg each : yearsOfEngg.values())
-	   {
-		   System.out.println(each);
-	   }
-}
-  
-   public void numberOfStudent(yearsOfEngg rr)
-   {
-	   switch (rr) {
+	public enum yearsOfEngg {
+		firstYear, secondYear, thirdYear, forurthYear, fifthYear
+	};
+
+	public enum weekDays {
+		Mon, tue, Wen, Thu, Fri
+	};
+
+	public enum employeeName {
+		Sandip, dhanaji
+	};
+
+	static int abcd = 45;
+
+	public static void main(String[] args) {
+		
+		for (yearsOfEngg each : yearsOfEngg.values()) 
+		{
+			System.out.println(each);
+		}
+		
+		EnumData obj = new EnumData();
+		byte ab = 67;
+		yearsOfEngg a = yearsOfEngg.firstYear;
+		a = yearsOfEngg.forurthYear;
+
+		obj.numberOfStudent(yearsOfEngg.forurthYear);
+
+		
+
+	}
+
+	public void numberOfStudent(yearsOfEngg rr) {
+		switch (rr) {
 		case firstYear:
-			System.out.println("number of student "+ 45);		
+			System.out.println("number of student " + 45);
 			break;
 
 		case secondYear:
-			System.out.println("number of student "+ 55);
+			System.out.println("number of student " + 55);
 			break;
 
 		case thirdYear:
-			System.out.println("number of student "+ 46);
+			System.out.println("number of student " + 46);
 			break;
 		case forurthYear:
-			System.out.println("number of student "+ 42);
-			break;			
-		
-		
+			System.out.println("number of student " + 42);
+			break;
+
 		}
-	
-   }
-   
+
+	}
+
 }
