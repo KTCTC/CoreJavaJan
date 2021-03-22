@@ -72,12 +72,7 @@ public class WrapperClass {
 				coutOfUpperCase++;
 			}
 		}
-		System.out.println("Number of lowercase in array = "+coutOfLowerCase);
-		
-		
-		
-		
-		
+		System.out.println("Number of lowercase in array = "+coutOfLowerCase);		
 		
 	//	Character ch = new Character('h');
 		
