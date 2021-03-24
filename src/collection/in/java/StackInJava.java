@@ -11,6 +11,12 @@ public class StackInJava {
 		abc.push("dhanaji");
 		abc.push("IP");
 		
+		
+		
+		System.out.println(abc.pop());
+		System.out.println(abc.pop());
+		System.out.println(abc.pop());
+		
 		for (String each:abc)
 		{
 			System.out.println(each);
@@ -19,10 +25,6 @@ public class StackInJava {
 		
 		
 		System.out.println(abc);
-		
-		System.out.println(abc.pop());
-		System.out.println(abc.pop());
-		System.out.println(abc.pop());
 		
 
 	}

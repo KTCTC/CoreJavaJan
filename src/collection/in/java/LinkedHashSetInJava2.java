@@ -20,6 +20,7 @@ public class LinkedHashSetInJava2 {
 		abc.add(55);
 		abc.add(33);
 		abc.add("Ajay");
+		abc.remove(78);
 		System.out.println(abc);
 		
 		Iterator<Object> itr = abc.iterator();

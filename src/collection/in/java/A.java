@@ -10,10 +10,10 @@ public class A {
 		this.a = a;
 		this.b = b;
 	}
-	public void add()
+	public int add()
 	{
 		int c = a+b;
-		System.out.println(c);
+		return c;
 	}
 
 }

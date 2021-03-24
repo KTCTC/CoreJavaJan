@@ -8,14 +8,13 @@ public class RunnableClass {
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		CollectionReturnType obj = new CollectionReturnType();
+		ArrayList<A> abc = obj.sampleMethod();
 		
-		int z = obj.samplemethod();
+		for (A each:abc)
+		{
+			System.out.println(each.add());
+		}
 		
-		ArrayList<Integer> ss = new ArrayList<>();
-		
-		ss= obj.returnListMethod();
-		
-		HashMap<String, String> rr = obj.returnHashMap();
 
 	}
 

@@ -23,6 +23,11 @@ public class ExceptionHandlingInJava1 {
 				System.out.println("String does not have any value");
 				obj.str = "Temp Value";
 			}
+			finally
+			{
+				//z=100;
+				System.out.println("Hi i am inside finally block");
+			}
 			System.out.println("After arth");
 			
 		} catch (ArithmeticException e) {
@@ -48,7 +53,12 @@ public class ExceptionHandlingInJava1 {
                e.printStackTrace();
 			
 		}
-				
+		
+		finally
+		{
+			//z=100;
+			System.out.println("Hi i am inside finally block");
+		}	
 		
 		System.out.println("After exception");
 

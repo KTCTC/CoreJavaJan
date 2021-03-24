@@ -2,12 +2,15 @@ package collection.in.java;
 
 import java.util.ArrayList;
 import java.util.HashMap;
+import java.util.LinkedHashSet;
+import java.util.Set;
 
 public class CollectionReturnType {
 	
 	public ArrayList<Integer> returnListMethod()
 	{
 		ArrayList<Integer> firstList = new ArrayList<>();
+		Integer aav = new Integer(234);
 		int aq = 23;
 		firstList.add(aq);		
 		firstList.add(4);
@@ -15,36 +18,41 @@ public class CollectionReturnType {
 		firstList.add(314);
 		firstList.add(234);
 		firstList.add(234);
+		firstList.add(aav);
 		
 		return firstList;
 		
 	}
 	
-	public HashMap<String,String> returnHashMap()
+	public LinkedHashSet<Object> getHashSet()
 	{
-		HashMap<String, String> abc = new HashMap<>();		
-		abc.put("First Name", "Sam");
-		abc.put("Last Name", "DN");
-		abc.put("Add", "Pune");
-		abc.put("Pin", "411013");
-		return abc;
+		// TODO Auto-generated method stub
+		LinkedHashSet<Object> abc = new LinkedHashSet<>();
+		 
+			abc.add(23);
+			abc.add(22);
+			abc.add(23);
+			abc.add(23);
+			abc.add(45);
+			abc.add(44);
+			abc.add(78);
+			abc.add(55);
+			return abc;
 	}
 	
-	public int samplemethod()
+	public ArrayList<A> sampleMethod()
 	{
-		try {
-			return 3;
-			
-		} catch (Exception e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
-			
-			return 2;
-		}
-		finally
-		{
-			return 4;
-		}
+		ArrayList<A> aa = new ArrayList<>(0);
+		A obj1 = new A(23, 23);
+		A obj2 = new A(20, 40);
+		aa.add(obj1);
+		aa.add(obj2);
+		aa.add(new A(50,100));
+		return aa;
 	}
+	
+	
+	
+	
 
 }

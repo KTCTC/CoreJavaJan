@@ -8,6 +8,9 @@ public class accessModifierJavaClass {
 	
 	public static void main(String[] args) {
 		
+		
+		
+		
 		accessModifierJavaClass obj = new accessModifierJavaClass();
 		
 		System.out.println(obj.publicInt);

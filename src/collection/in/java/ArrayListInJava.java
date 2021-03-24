@@ -12,24 +12,50 @@ public class ArrayListInJava {
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		
-		ArrayList<Integer> firstList = new ArrayList<>();
-		int aq = 23;
+		
+		
+		
+		ArrayList<Integer> firstList = new ArrayList<>();	
+		
+		Integer aq = new Integer(23);
 		firstList.add(aq);
 		//int pq = firstList.get(0);
-		
-		firstList.add(4);
+		int bb = 88;
+		firstList.add(bb);
 		firstList.add(324);
 		firstList.add(314);
 		firstList.add(234);
 		firstList.add(234);
-		firstList.add(null);
-		firstList.remove(3);
-		
+		//firstList.add(null);				
+		firstList.remove(3);		
 		Collections.sort(firstList);
-		firstList.add(555);
+		firstList.add(555);		
+		
 		System.out.println(firstList.get(2));
 		System.out.println(firstList);
+		System.out.println(firstList.size());
 		
+		
+Iterator<Integer> itr2 = firstList.iterator();
+		
+		while(itr2.hasNext())
+		{
+			System.out.println(itr2.next());
+		}
+		
+		
+		
+		
+		
+		for (Integer eachValue :firstList )
+		{
+			System.out.println(eachValue);
+		}
+		
+		for (int i=0;i<firstList.size();i++)
+		{
+			System.out.println(firstList.get(i));
+		}
 		
 		
 		
@@ -61,12 +87,7 @@ public class ArrayListInJava {
 		
 		
 		
-		Iterator<Integer> itr2 = firstList.iterator();
 		
-		while(itr2.hasNext())
-		{
-			System.out.println(itr2.next());
-		}
 		
 		
 		

@@ -9,6 +9,14 @@ public class ArraysInJava {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
+		int aarray1[] = new int[6];
+		aarray1[0] = 567;
+		aarray1[1] = 78;
+		aarray1[2] = 45;
+		aarray1[3] =90;
+		aarray1[4] = 3456;
+		aarray1[5] = 55;
+		
 char []charArray = {'b','z','a','X', '6', ' ', '^','#','*'};
 		
 		Arrays.sort(charArray);
@@ -29,8 +37,9 @@ char []charArray = {'b','z','a','X', '6', ' ', '^','#','*'};
 		int b=4;
 		b=78;
 		
-	int aarray1[] = {12,45,567,8976,456};
-	int ag[] = new int[4];	
+	
+	int ag[] = new int[4];
+	
 	int ab[] = aarray1;	
 	int abcd[] = {12,45,567,8976,456};
 	//aarray1=abcd;	
@@ -43,11 +52,7 @@ char []charArray = {'b','z','a','X', '6', ' ', '^','#','*'};
 	int lngth = abcd.length;
 	
 	System.out.println(lngth);
-	aarray1[0] = 567;
-	aarray1[1] = 78;
-	aarray1[2] = 45;
-	aarray1[3] =90;
-	aarray1[4] = 3456;
+	
 	
 	
 	abcd[0] = 444;

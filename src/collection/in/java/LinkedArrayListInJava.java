@@ -1,13 +1,16 @@
 package collection.in.java;
 
+
+import java.io.IOException;
+import java.util.Iterator;
 import java.util.LinkedList;
+import java.util.List;
 
 public class LinkedArrayListInJava {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-		LinkedList<Integer> abc = new LinkedList<Integer>();
-		
+		List<Integer> abc = new LinkedList<Integer>();		
 		abc.add(23);
 		abc.add(45);
 		abc.add(24);
@@ -18,6 +21,16 @@ public class LinkedArrayListInJava {
 		System.out.println(abc);
 		abc.remove(3);
 		System.out.println(abc);
+		
+		Iterator<Integer> itr = abc.iterator();
+		
+		while (itr.hasNext())
+		{
+			System.out.println(itr.next());
+		}
+		
+		
+		
 	}
 
 }
